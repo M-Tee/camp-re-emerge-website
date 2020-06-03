@@ -3,22 +3,26 @@
     
     box-sizing: border-box;
     line-height: 1.5rem;
+    padding:0;
+    margin: 0;
 }
 
 html{
-    
+    background-color:  #a5dc0f;
 }
 body{
-    background-color:  #a5dc0f;
+    
     color:  #000000;
 }
 /* NAVBAR STYLES */
 .nav{
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-color: unset;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    margin-bottom: 100px;
 }
 /* .menu>a{
     margin: 0 20px;
@@ -48,13 +52,24 @@ body{
 
 
 /* ABOUT SECTION SYTLES */
+
+
 .card-style{
-    margin: 80px 100px;
+    margin: 70px 100px;
     padding: 20px;
     border-radius: 7px;
 }
-.is-3{
-    padding: 20px;
+.title2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.125;
+    text-align: center;
+    color: #000000;
+}
+.title3{
+    padding: 7px 0;
+    text-align: center;
+    font-size: 2rem;
 }
 
 
@@ -63,7 +78,7 @@ body{
 width: 70px;
 }
 .column-style{
-    padding: 10px 30px 30px;
+    padding: 20px 30px 30px;
 }
 /* FOOTER */
 .footer{
@@ -81,4 +96,37 @@ a{
 .social-icon{
     width: 20px;
     margin-right: 20px;
+}
+/* BLOG STYLES */
+.blog-card{
+    margin-left: 100px;
+}
+.underline{
+    height: 1px;
+    background-color: #a5dc0f;
+    margin: 1rem 0 0 0;
+}
+
+.blog-details{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-img{
+    width: 60%;
+    margin: auto auto;
+}
+.btn-readmore{
+    background-color: #a5dc0f;
+    color: #000000;
+    border: 3px solid #a5dc0f;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.btn-readmore:hover{
+    background-color: unset;
+    border: 3px solid #a5dc0f;
+}
+.text-tiny{
+    font-size: 13px;
+    color: #1d1c1ca6;
 }
