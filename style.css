@@ -26,27 +26,13 @@ body{
 /* NAVBAR STYLES */
 .nav{
     background-color: #000000;
-    /* background-color: unset; */
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     margin-bottom: 100px;
 }
-/* .menu>a{
-    margin: 0 20px;
-    padding: 10px 10px;
-    color: #ffffff;
-    font-weight: 600;
-    width: 150px;
-    
-}
-.menu>a:hover{
-    background-color: unset;
-    color: #a5dc0f;
-    transition: ease-in-out; 
-    font-size: 1.1rem;
-} */
+
 .menu>a{
     padding: 20px 50px;
     color: #ffffff;
@@ -78,8 +64,6 @@ body{
 
 
 /* ABOUT SECTION SYTLES */
-
-
 .card-style{
     margin: 70px 100px;
     padding: 20px;
@@ -108,6 +92,7 @@ width: 70px;
 .column-style{
     padding: 20px 30px 30px;
 }
+
 /* FOOTER */
 .footer{
     background-color: #000000;
@@ -125,6 +110,7 @@ a{
     width: 20px;
     margin-right: 20px;
 }
+
 /* BLOG STYLES */
 .blog-card{
     margin-left: 100px;
