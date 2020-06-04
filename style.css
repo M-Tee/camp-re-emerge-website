@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Oregano&family=Raleway&display=swap');
 /* GENERAL STYLES */
 *{
     
@@ -5,6 +6,7 @@
     line-height: 1.5rem;
     padding:0;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 html{
@@ -14,6 +16,13 @@ body{
     
     color:  #000000;
 }
+.title2,
+.title3,
+.is-4,
+.navbar-item{ 
+    font-family: 'Aladin', cursive;
+}
+
 /* NAVBAR STYLES */
 .nav{
     background-color: #000000;
@@ -83,6 +92,7 @@ body{
     line-height: 1.125;
     text-align: center;
     color: #000000;
+    
 }
 .title3{
     padding: 7px 0;
