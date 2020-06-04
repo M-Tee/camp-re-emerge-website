@@ -26,10 +26,9 @@ body{
         bottom: 0;
         background-color: rgba(0,0,0,0.5);
         z-index: 1;
-    cursor: pointer;
 }
 .nav{
-    background-color: #0000009f;
+    background-color: unset;
   
 }
 .menu>a{
@@ -64,16 +63,10 @@ body{
 .home-card{
     max-width: 500px;
     margin: 100px 60px 0 20px;
-    background-color: #0000009f;
+    background-color: unset;
     padding: 30px 20px;
-    border-radius: 5px;
-    
 }
-.card{
-    /* box-shadow: 0 .5em 1em -.125em #a5dc0f48,0 0 0 1px #a5dc0f3f; */
-    box-shadow: 0 .5em 1em -.125em #0000009f,0 0 0 1px#0000009f;
-   
-}
+
 .home-content{
     margin: 50px 0px;
     text-shadow: 0 .5em 1em -.125e #ffffff;
