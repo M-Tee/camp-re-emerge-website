@@ -148,3 +148,15 @@ a{
     font-size: 13px;
     color: #1d1c1ca6;
 }
+@media screen and (max-width: 1024px){
+    .card-style{
+        margin: 70px 50px;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .card-style{
+        margin: 70px 30px;
+    }
+
+}
