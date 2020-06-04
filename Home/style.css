@@ -47,6 +47,11 @@ body{
 .is-active > .navbar-item, .navbar-link {
     color: #000000;
 }
+.navbar-burger,
+.navbar-item{
+    margin-top: 30px;
+    padding: 20px 50px;
+}
 @media screen and (max-width: 1023px) {
     .navbar-menu {
         background-color: #0000009f;
@@ -95,6 +100,21 @@ body{
     color: #000000;
     border: none;
 }
+@media screen and (max-width: 1024px){
+    .home-card{
+        margin: 30px;
+        padding: 30px;
+    }
+    .home-card>.title{
+        font-size: 4.5rem;
+        }
+}
+@media screen and (max-width: 600px){
+    .home-card>.title{
+    font-size: 3.5rem;
+    }
+}
+
 @media screen and (max-width: 400px){
     html{
         background: url(../Assets/tommy-lisbin-2DH-qMX6M4E-unsplash.png) no-repeat right bottom fixed; 
@@ -105,7 +125,6 @@ body{
     }
     .home-card>.title{
         font-size: 2.5rem;
-
     }
     .home-card{
         
