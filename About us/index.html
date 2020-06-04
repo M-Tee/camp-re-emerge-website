@@ -12,30 +12,28 @@
 </head>
 
 <body>
-    <nav class="navbar nav ">
-        <div class="navbar_brand">
-            <img class="navbar-item" src="" alt="v">
-            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <nav class="navbar nav" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand nabar_brand">
+            <a class="navbar-item" href="/index.html">
+                <img src="" alt="">
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div class="navbar_menu navbar-end menu">
-
-            <a href="../index.html" class="navbar-item"> Home </a>
-            <a href="../About us/index.html" class="navbar-item"> About Us </a>
-            <a class="navbar-item"> Blog </a>
-            <a class="navbar-item"> Contact Us </a>
-            <!-- <ul class="navbar-end">
-                <li><a class="navbar-item" href="#"> Home </a></li>
-                <li><a class="navbar-item" href="#"> About Us </a></li>
-                <li><a class="navbar-item" href="#"> Blog </a></li>
-                <li><a class="navbar-item" href="#"> Contact Us </a> </li>
-            </ul> -->
+        <div id="navbarBasicExample" class="navbar-menu menu navbar_menu">
+            <ul class="navbar-end">
+                <a class="navbar-item" href="/index.html"> Home </a>
+                <a class="navbar-item" href="/About us/index.html"> About Us </a>
+                <a class="navbar-item" href="#"> Blog </a>
+                <a class="navbar-item" href="#"> Contact Us </a>
+            </ul>
         </div>
-
     </nav>
 
     <section class="about">
@@ -82,9 +80,9 @@
                     </p>
                 </div>
                 <div class="column column-style">
-                    <img src="../Assets/mission.svg " alt="" class="icons">                    
+                    <img src="../Assets/mission.svg " alt="" class="icons">
                     <p class="title is-4">Vision</p>
-                    <p class="has-text-justified" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p class="has-text-justified">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                         natoque penatibus et magnis dis parturient montes, nascetur
                         ridiculus mus.
@@ -93,7 +91,7 @@
                 <div class="column column-style">
                     <img src="../Assets/value(1).svg" alt="" class="icons">
                     <p class="title is-4">Values</p>
-                    <p class="has-text-justified" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p class="has-text-justified">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                         natoque penatibus et magnis dis parturient montes, nascetur
                         ridiculus mus.
@@ -107,9 +105,9 @@
             <div class="column contacts">
                 <!-- <div class="email is-inline">
                     <img src="" alt="">  -->
-                    <p>Camp.re.merge@gmail.com</p> 
+                <p>Camp.re.merge@gmail.com</p>
                 <!-- </div> -->
-               
+
                 <p> 0712345678</p>
             </div>
             <div class="column social-icons is-inline">
@@ -118,22 +116,49 @@
                 <img src="../Assets/twitter.png" alt="" class="social-icon">
             </div>
             <div class="column attribution">
-                    Illustrations by<a href="https://www.freepik.com/free-photos-vectors/heart"> brgfx </a>
+                Illustrations by<a href="https://www.freepik.com/free-photos-vectors/heart"> brgfx </a>
             </div>
         </div>
         <div>
-           <p class="has-text-centered"> Copyright@2020 by <a href="#">M-tee</a> </p> 
+            <p class="has-text-centered"> Copyright@2020 by <a href="#">M-tee</a> </p>
         </div>
-        
-        
-            <!-- Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+
+        <!-- Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
             Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
             Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
             Icons made by <a href="" title="Icongeek26">Icongeek26 Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
             
            
             i love camping<a href="https://www.freepik.com/free-photos-vectors/heart">Heart vector created by brgfx - www.freepik.com</a> -->
-        </footer>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
 </body>
 
 </html>
