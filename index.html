@@ -9,50 +9,71 @@
     <link rel="stylesheet" href="/Home/style.css">
 
     <title>Document</title>
-    <style>
-   
-    </style>
 </head>
 
 <body>
-    <nav class="navbar nav ">
-        <div class="navbar_brand">
-            <img class="navbar-item" src="" alt="Logo">
-            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <nav class="navbar nav" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand nabar_brand">
+            <a class="navbar-item" href="/index.html">
+                <img src="" alt="">
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div class="navbar_menu navbar-end menu">
-
-            <a href="index.html" class="navbar-item"> Home </a>
-            <a href="../About us/index.html" class="navbar-item"> About Us </a>
-            <a class="navbar-item"> Blog </a>
-            <a class="navbar-item"> Contact Us </a>
-
-            <!-- <ul class="navbar-end">
-                <li><a class="navbar-item" href="#"> Home </a></li>
-                <li><a class="navbar-item" href="#"> About Us </a></li>
-                <li><a class="navbar-item" href="#"> Blog </a></li>
-                <li><a class="navbar-item" href="#"> Contact Us </a> </li>
-            </ul> -->
+        <div id="navbarBasicExample" class="navbar-menu menu navbar_menu">
+            <ul class="navbar-end">
+                <a class="navbar-item" href="/index.html"> Home </a>
+                <a class="navbar-item" href="/About us/index.html"> About Us </a>
+                <a class="navbar-item" href="#"> Blog </a>
+                <a class="navbar-item" href="#"> Contact Us </a>
+            </ul>
         </div>
-       
     </nav>
     <section class="home ">
         <div class="home-card card is-pulled-right">
             <h1 class="title is-1 has-text-white ">Camp Re-emerge</h1>
             <p class="home-content">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  
-                lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  
-                lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum 
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum
             </p>
             <button class="button is-rounded is-block has-text-weight-bold is-medium">Camp with us</button>
         </div>
-            
+
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
 </body>
 
 </html>

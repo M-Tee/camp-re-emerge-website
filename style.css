@@ -39,15 +39,32 @@ body{
     font-size: 1.1rem;
 } */
 .menu>a{
-    padding: 10px 50px;
+    padding: 20px 50px;
     color: #ffffff;
-    font-weight: 600;
-    
+    font-weight: 600; 
 }
 .menu>a:hover{
-    background-color: #ffffff;
+    background-color: #a5dc0f;
+    color: #000000;  
+}
+.is-active > .navbar-item, .navbar-link {
     color: #000000;
-    
+}
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: #0000009f;
+    }
+
+    .navbar-item, .navbar-link{
+        color: #fafafa;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .navbar-item, .navbar-link {
+        color: #ffffff;
+    }
 }
 
 
