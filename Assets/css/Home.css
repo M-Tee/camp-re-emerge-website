@@ -33,33 +33,42 @@ body{
     background-color: unset;
   
 }
-.menu>a{
+.navbar-item,.navbar-link{
     padding: 20px 50px;
     color: #ffffff;
     font-weight: 600; 
     font-family: 'Aladin', cursive;
     
 }
-.menu>a:hover{
+.navbar-item:hover{
     background-color: #a5dc0f;
     color: #000000;  
+}
+.navbar-menu {
+    background-color: unset;
 }
 .is-active > .navbar-item, .navbar-link {
     color: #000000;
 }
 .navbar-burger,
 .navbar-item{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     padding: 20px 50px;
 }
+
 @media screen and (max-width: 1023px) {
     .navbar-menu {
         background-color: #0000009f;
+        height: 100vh;
+        
     }
-
+    
     .navbar-item, .navbar-link{
         color: #fafafa;
         font-weight: 600;
+    }
+    .navbar-item:hover{
+        background-color: #a5dc0f;  
     }
 }
 

@@ -47,12 +47,19 @@ body{
     color: #000000;
 }
 @media screen and (max-width: 1023px) {
+    .navbar-burger{
+        color: #a5dc0f;
+    }
     .navbar-menu {
         background-color: #0000009f;
+        height: 100vh;
+        text-align: center;
     }
-
+    .navbar-end>.navbar-item{
+        padding: 2.5rem;
+    }
     .navbar-item, .navbar-link{
-        color: #fafafa;
+        color:#a5dc0f;
         font-weight: 600;
     }
 }
@@ -62,7 +69,12 @@ body{
         color: #ffffff;
     }
 }
+@media screen and (max-width: 400px){
+    .navbar-end>.navbar-item{
+        padding: 2rem;
+    }
 
+}
 
 /* ABOUT SECTION SYTLES */
 .card-style{
