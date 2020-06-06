@@ -77,6 +77,9 @@ body{
 }
 
 /* ABOUT SECTION SYTLES */
+/* .card{
+    background-color: #eafac0;
+} */
 .card-style{
     margin: 70px 100px;
     padding: 20px;
@@ -165,13 +168,7 @@ a{
 .contact-image{
     width: 60%;
 }
-.contact-form>.button{
-    background-color: #a5dc0f;
-    color: #000000;
-    border: 3px solid #a5dc0f;
-    border-radius: 10px;
-    margin-top: 30px;
-}
+
 .contact-form>.input:hover,
 .contact-form>.textarea:focus{
     border-color: #a5dc0f;
@@ -179,6 +176,13 @@ a{
 .contact-form>.input:focus,
 .contact-form>.textarea:focus{
     border-color: #a5dc0f;
+}
+.contact-form>.button{
+    background-color: #a5dc0f;
+    color: #000000;
+    border: 3px solid #a5dc0f;
+    border-radius: 10px;
+    margin-top: 30px;
 }
 .contact-form>.button:hover{
     background-color: unset;
@@ -189,6 +193,13 @@ a{
     .card-style{
         margin: 70px 50px;
     }
+    .contact{
+        display: block;
+    }
+    .contact-image{
+        display: none;
+    }
+
 
 }
 @media screen and (max-width: 600px){
