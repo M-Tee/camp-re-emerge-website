@@ -33,6 +33,9 @@ body{
     background-color: unset;
   
 }
+.navbar-item{
+    font-size: 1rem;
+}
 .navbar-item,.navbar-link{
     padding: 20px 50px;
     color: #ffffff;
@@ -60,7 +63,11 @@ body{
     .navbar-menu {
         background-color: #0000009f;
         height: 100vh;
+        text-align: center;
         
+    }
+    .navbar-end>.navbar-item{
+        padding: 2.5rem;
     }
     
     .navbar-item, .navbar-link{
@@ -78,6 +85,12 @@ body{
     }
 }
 
+@media screen and (max-width: 400px){
+    .navbar-end>.navbar-item{
+        padding: 2rem;
+    }
+
+}
 .home-card{
     
     margin: 100px 60px 0 20px;
