@@ -1,34 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Oregano&family=Raleway&display=swap');
 /* GENERAL STYLES */
-*{
-    
+
+* {
     box-sizing: border-box;
     line-height: 1.5rem;
-    padding:0;
+    padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
-.margin-top{
+
+.margin-top {
     margin-top: 8rem;
 }
 
-html{
-    background-color:  #a5dc0f;
+html {
+    background-color: #a5dc0f;
 }
-body{
-    
-    color:  #000000;
+
+body {
+    color: #000000;
 }
-.title2,
-.title3,
-.is-4,
-.navbar-item{ 
+
+.title2, .title3, .is-4, .navbar-item {
     font-family: 'Aladin', cursive;
 }
 
-
 /* NAVBAR STYLES */
-.nav{
+
+.nav {
     background-color: #000000;
     margin-bottom: -300px;
     position: fixed;
@@ -36,28 +35,30 @@ body{
     right: 0;
     left: 0;
     margin-bottom: 100px;
-    
+}
 
+.navbar-item {
+    font-size: 1rem;
 }
-.navbar-item{
-font-size: 1rem;
-}
-.navbar-item,.navbar-link{
+
+.navbar-item, .navbar-link {
     padding: 20px 50px;
     color: #000000;
-    font-weight: 600; 
-    font-family: 'Aladin', cursive;   
+    font-weight: 600;
+    font-family: 'Aladin', cursive;
 }
 
-.navbar-item:hover{
+.navbar-item:hover {
     background-color: #a5dc0f;
-    color: #000000;  
-}
-.is-active > .navbar-item, .navbar-link {
     color: #000000;
 }
+
+.is-active>.navbar-item, .navbar-link {
+    color: #000000;
+}
+
 @media screen and (max-width: 1023px) {
-    .navbar-burger{
+    .navbar-burger {
         color: #a5dc0f;
     }
     .navbar-menu {
@@ -65,63 +66,69 @@ font-size: 1rem;
         height: 100vh;
         text-align: center;
     }
-    .navbar-end>.navbar-item{
+    .navbar-burger, .navbar-item {
+        padding: 0px 50px 0;
+    }
+    .navbar-end>.navbar-item {
         padding: 2.5rem;
     }
-    .navbar-item, .navbar-link{
-        color:#a5dc0f;
+    .navbar-item, .navbar-link {
+        color: #a5dc0f;
         font-weight: 600;
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
     .navbar-item, .navbar-link {
         color: #ffffff;
     }
 }
-@media screen and (max-width: 400px){
-    .navbar-end>.navbar-item{
+
+@media screen and (max-width: 400px) {
+    .navbar-end>.navbar-item {
         padding: 2rem;
     }
-
 }
 
 /* ABOUT SECTION SYTLES */
+
 /* .card{
     background-color: #eafac0;
 } */
 
-.card-style{
+.card-style {
     margin: 70px 100px;
     padding: 20px;
     border-radius: 18px;
-    
 }
-.title2{
+
+.title2 {
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 1.125;
     text-align: center;
     color: #000000;
-    
 }
-.title3{
+
+.title3 {
     padding: 7px 0;
     text-align: center;
     font-size: 2rem;
 }
 
-
 /* VALUES SECTION SYTLES*/
-.icons{
-width: 70px;
+
+.icons {
+    width: 70px;
 }
-.column-style{
+
+.column-style {
     padding: 20px 30px 30px;
 }
 
 /* FOOTER */
-.footer{
+
+.footer {
     background-color: #000000;
     font-size: 11px;
     color: #ffffff;
@@ -129,96 +136,105 @@ width: 70px;
     bottom: 0;
     padding: 30px;
 }
-a{
+
+a {
     color: #a5dc0f;
     text-decoration: none;
 }
-.social-icon{
+
+.social-icon {
     width: 20px;
     margin-right: 20px;
 }
 
 /* BLOG STYLES */
-.blog-card{
+
+.blog-card {
     margin-left: 100px;
 }
-.underline{
+
+.underline {
     height: 1px;
     background-color: #a5dc0f;
     margin: 1rem 0 0 0;
 }
 
-.blog-details{
+.blog-details {
     display: flex;
     justify-content: space-between;
 }
-.blog-img{
+
+.blog-img {
     width: 60%;
     margin: auto auto;
 }
-.btn-readmore{
+
+.btn-readmore {
     background-color: #a5dc0f;
     color: #000000;
     border: 3px solid #a5dc0f;
     border-radius: 10px;
     margin-top: 30px;
 }
-.btn-readmore:hover{
+
+.btn-readmore:hover {
     background-color: unset;
     border: 3px solid #a5dc0f;
 }
-.text-tiny{
+
+.text-tiny {
     font-size: 13px;
     color: #1d1c1ca6;
 }
 
 /* CONTACT US SYTLES */
-.contact{
+
+.contact {
     display: flex;
 }
-.contact-image{
+
+.contact-image {
     width: 60%;
 }
 
-.contact-form>.input:hover,
-.contact-form>.textarea:focus{
-    border-color: #a5dc0f;
-} 
-.contact-form>.input:focus,
-.contact-form>.textarea:focus{
+.contact-form>.input:hover, .contact-form>.textarea:focus {
     border-color: #a5dc0f;
 }
-.contact-form>.button{
+
+.contact-form>.input:focus, .contact-form>.textarea:focus {
+    border-color: #a5dc0f;
+}
+
+.contact-form>.button {
     background-color: #a5dc0f;
     color: #000000;
     border: 3px solid #a5dc0f;
     border-radius: 10px;
     margin-top: 30px;
 }
-.contact-form>.button:hover{
+
+.contact-form>.button:hover {
     background-color: unset;
     border: 3px solid #a5dc0f;
 }
 
-@media screen and (max-width: 1024px){
-    .card-style{
+@media screen and (max-width: 1024px) {
+    .card-style {
         margin: 70px 50px;
     }
-    .contact{
+    .contact {
         display: block;
     }
-    .contact-image{
+    .contact-image {
         display: none;
     }
-
-
 }
-@media screen and (max-width: 600px){
-    .card-style{
+
+@media screen and (max-width: 600px) {
+    .card-style {
         margin: 70px 30px;
     }
-    .contact{
+    .contact {
         display: block;
     }
-
 }

@@ -1,62 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Oregano&family=Raleway&display=swap');
-*{
+* {
     color: #ffffff;
     box-sizing: border-box;
     font-size: 1.3rem;
     font-family: 'Aladin', cursive;
 }
-html{
-    background: url(../tommy-lisbin-2DH-qMX6M4E-unsplash@2x.png) no-repeat center bottom fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: #a5dc0f;
+
+html {
+    background: url(../tommy-lisbin-2DH-qMX6M4E-unsplash@2x.png) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #a5dc0f;
 }
-body{
+
+body {
     color: #ffffff;
-    
-    
 }
-.overlay{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0,0,0,0.5);
-        z-index: 1;
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
-.nav{
+
+.nav {
     background-color: unset;
-  
 }
-.navbar-item{
+
+.navbar-item {
     font-size: 1rem;
 }
-.navbar-item,.navbar-link{
+
+.navbar-item, .navbar-link {
     padding: 20px 50px;
     color: #ffffff;
-    font-weight: 600; 
+    font-weight: 600;
     font-family: 'Aladin', cursive;
-    
 }
-.navbar-item:hover{
+
+.navbar-item:hover {
     background-color: #a5dc0f;
-    color: #000000;  
+    color: #000000;
 }
+
 .navbar-menu {
     background-color: unset;
 }
-.is-active > .navbar-item, .navbar-link {
+
+.is-active>.navbar-item, .navbar-link {
     color: #000000;
-}
-.navbar-burger,
-.navbar-item{
-    /* margin-top: 30px; */
-    padding: 20px 50px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -64,99 +64,98 @@ body{
         background-color: #0000009f;
         height: 100vh;
         text-align: center;
-        
     }
-    .navbar-end>.navbar-item{
+    .navbar-end>.navbar-item {
         padding: 2.5rem;
     }
-    
-    .navbar-item, .navbar-link{
+    .navbar-burger, .navbar-item {
+        padding: 0px 50px 0;
+    }
+    .navbar-item, .navbar-link {
         color: #fafafa;
         font-weight: 600;
     }
-    .navbar-item:hover{
-        background-color: #a5dc0f;  
+    .navbar-item:hover {
+        background-color: #a5dc0f;
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
     .navbar-item, .navbar-link {
         color: #ffffff;
     }
 }
 
-@media screen and (max-width: 400px){
-    .navbar-end>.navbar-item{
+@media screen and (max-width: 400px) {
+    .navbar-end>.navbar-item {
         padding: 2rem;
     }
-
 }
-.home-card{
-    
+
+.home-card {
     margin: 100px 60px 0 20px;
     background-color: unset;
     padding: 30px 20px;
     float: right;
-
-    
 }
-.home-card>.title,
-.button{
+
+.home-card>.title, .button {
     font-family: 'Aladin', cursive;
     font-size: 5rem;
 }
 
-.home-content{
+.home-content {
     margin: 50px 0px;
     max-width: 500px;
     font-family: 'Raleway', sans-serif;
 }
-.button{
+
+.button {
     margin-top: 100px;
-    background-color:  #a5dc0f;
+    background-color: #a5dc0f;
     color: #000000;
     border: none;
-  
 }
-.button:hover{
+
+.button:hover {
     background-color: #0000009f;
     color: #ffffff;
     border: 3px solid #a5dc0f;
 }
-@media screen and (max-width: 1024px){
-    .home-card{
+
+@media screen and (max-width: 1024px) {
+    .home-card {
         margin: 30px;
         padding: 30px;
     }
-    .home-card>.title{
+    .home-card>.title {
         font-size: 4.5rem;
-        }
-}
-@media screen and (max-width: 600px){
-    .home-card>.title{
-    font-size: 3.5rem;
     }
 }
 
-@media screen and (max-width: 400px){
-    html{
-        background: url(../tommy-lisbin-2DH-qMX6M4E-unsplash.png) no-repeat right bottom fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@media screen and (max-width: 600px) {
+    .home-card>.title {
+        font-size: 3.5rem;
     }
-    .home-card>.title{
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        background: url(../tommy-lisbin-2DH-qMX6M4E-unsplash.png) no-repeat right bottom fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .home-card>.title {
         font-size: 2.5rem;
     }
-    .home-card{
-        
+    .home-card {
         margin: 20px;
         padding: 20px;
         float: none;
     }
-    .home-content{
+    .home-content {
         max-width: unset;
     }
-    
 }
