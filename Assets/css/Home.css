@@ -129,13 +129,20 @@ body {
         padding: 30px;
     }
     .home-card>.title {
-        font-size: 4.5rem;
+        font-size: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .home-card>.title {
+        font-size: 3rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     .home-card>.title {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -148,7 +155,7 @@ body {
         background-size: cover;
     }
     .home-card>.title {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .home-card {
         margin: 20px;

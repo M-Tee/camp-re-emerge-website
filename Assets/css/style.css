@@ -231,6 +231,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+    .title2 { 
+        font-size: 2rem;
+    }
     .card-style {
         margin: 70px 30px;
     }
