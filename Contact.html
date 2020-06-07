@@ -10,7 +10,30 @@
    
 </head>
 <body>
-    <section class="contact">
+        <nav class="navbar nav" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand navbar_brand">
+                    <a class="navbar-item" href="/index.html">
+                        <img src="./Assets/carebbian adventure lg-03.png" alt="">
+                    </a>
+        
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+        
+                <div id="navbarBasicExample" class="navbar-menu menu navbar_menu">
+                    <ul class="navbar-end">
+                        <a class="navbar-item" href="./index.html"> Home </a>
+                        <a class="navbar-item" href="./About.html"> About Us </a>
+                        <a class="navbar-item" href="/Blog.html"> Blog </a>
+                        <a class="navbar-item" href="/Contact.html"> Contact Us </a>
+                    </ul>
+                </div>
+            </nav>
+    <section class="contact margin-top">
         <img src="Assets/CS character_DFM2-02.svg" alt="" class="contact-image">
         <form action="" class="card card-style contact-form">
             <h3 class="title is-4">Reach out to us: </h3>
@@ -25,5 +48,32 @@
 
     </section>
     <a href="https://www.vecteezy.com/free-vector/customer-service">Customer Service Vectors by Vecteezy</a>
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+    
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+    
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach(el => {
+                        el.addEventListener('click', () => {
+    
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+    
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+    
+                        });
+                    });
+                }
+    
+            });
+        </script>
 </body>
 </html>

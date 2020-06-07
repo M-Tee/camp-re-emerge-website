@@ -192,6 +192,9 @@ a {
 .contact {
     display: flex;
 }
+.contact>.card-style{
+    margin-top: unset;
+}
 
 .contact-image {
     width: 60%;
