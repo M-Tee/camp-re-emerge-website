@@ -126,26 +126,6 @@ body {
     padding: 20px 30px 30px;
 }
 
-/* FOOTER */
-
-.footer {
-    background-color: #000000;
-    font-size: 11px;
-    color: #ffffff;
-    text-align: center;
-    bottom: 0;
-    padding: 30px;
-}
-
-a {
-    color: #a5dc0f;
-    text-decoration: none;
-}
-
-.social-icon {
-    width: 20px;
-    margin-right: 20px;
-}
 
 /* BLOG STYLES */
 
@@ -243,4 +223,24 @@ a {
     .contact {
         display: block;
     }
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #000000;
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+a {
+    color: #a5dc0f;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 20px;
+    margin-right: 20px;
 }
