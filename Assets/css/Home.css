@@ -64,6 +64,9 @@ a.navbar-item:hover {
 }
 
 @media screen and (max-width: 1023px) {
+    .navbar-burger span{
+        height: 2px;
+    }
     .navbar-menu {
         background-color: #0000009f;
         height: 100vh;

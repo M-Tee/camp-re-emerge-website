@@ -62,6 +62,10 @@ a.navbar-item:hover {
     .navbar-burger {
         color: #a5dc0f;
     }
+    .navbar-burger span{
+        height: 2px;
+    }
+    
     .navbar-menu {
         background-color: #0000009f;
         height: 100vh;
