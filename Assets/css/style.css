@@ -48,11 +48,12 @@ body {
     font-family: 'Aladin', cursive;
 }
 
-.navbar-item:hover {
-    background-color: #a5dc0f;
-    color: #000000;
+a.navbar-item:hover {
+    border-bottom: 3px solid #a5dc0f;
+    background-color: unset;
+    color: #a5dc0f;
+   
 }
-
 .is-active>.navbar-item, .navbar-link {
     color: #000000;
 }
@@ -75,6 +76,12 @@ body {
     .navbar-item, .navbar-link {
         color: #a5dc0f;
         font-weight: 600;
+    }
+    a.navbar-item:hover {
+        border: 3px solid #a5dc0f;
+        background-color: unset;
+        color: #a5dc0f;
+       
     }
 }
 

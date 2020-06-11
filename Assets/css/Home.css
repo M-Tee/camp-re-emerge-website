@@ -47,9 +47,12 @@ body {
     font-family: 'Aladin', cursive;
 }
 
-.navbar-item:hover {
-    background-color: #a5dc0f;
-    color: #000000;
+
+a.navbar-item:hover {
+    border-bottom: 3px solid #a5dc0f;
+    background-color: unset;
+    color: #a5dc0f;
+   
 }
 
 .navbar-menu {
