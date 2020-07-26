@@ -2,7 +2,6 @@
 * {
     color: #ffffff;
     box-sizing: border-box;
-    
     font-family: 'Aladin', cursive;
 }
 
@@ -47,12 +46,10 @@ body {
     font-family: 'Aladin', cursive;
 }
 
-
 a.navbar-item:hover {
     border-bottom: 3px solid #a5dc0f;
     background-color: unset;
     color: #a5dc0f;
-   
 }
 
 .navbar-menu {
@@ -64,7 +61,7 @@ a.navbar-item:hover {
 }
 
 @media screen and (max-width: 1023px) {
-    .navbar-burger span{
+    .navbar-burger span {
         height: 2px;
     }
     .navbar-menu {
@@ -99,6 +96,12 @@ a.navbar-item:hover {
     }
 }
 
+/* Animation */
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
 .home-card {
     margin: 100px 60px 0 20px;
     background-color: unset;
@@ -125,24 +128,26 @@ a.navbar-item:hover {
 }
 
 .button:hover {
-    
     background-color: #a5dc0f;
     color: #000000;
     border: none;
 }
-.home-footer{
+
+.home-footer {
     font-size: 11px;
     color: #ffffff;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     left: 0;
     right: 0;
 }
+
 a {
     color: #a5dc0f;
     text-decoration: none;
 }
-.atribution{
+
+.atribution {
     font-size: 8px;
 }
 
@@ -155,7 +160,6 @@ a {
         font-size: 4rem;
     }
 }
-
 
 @media screen and (max-width: 768px) {
     .home-card>.title {
