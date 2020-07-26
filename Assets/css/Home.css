@@ -2,7 +2,6 @@
 * {
     color: #ffffff;
     box-sizing: border-box;
-    font-family: 'Aladin', cursive;
 }
 
 html {
@@ -102,6 +101,11 @@ a.navbar-item:hover {
     line-height: 1em;
 }
 
+.ml12 .letters {
+    line-height: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
 .home-card {
     margin: 100px 60px 0 20px;
     background-color: unset;
@@ -114,8 +118,9 @@ a.navbar-item:hover {
     font-size: 5rem;
 }
 
+.sub-title,
 .home-content {
-    margin: 50px 0px;
+    margin: 20px 0px;
     max-width: 500px;
     font-family: 'Raleway', sans-serif;
 }
@@ -140,6 +145,7 @@ a.navbar-item:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    font-family: 'Aladin', cursive;
 }
 
 a {
