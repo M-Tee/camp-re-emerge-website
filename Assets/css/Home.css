@@ -36,6 +36,8 @@ body {
 
 .navbar-item {
     font-size: 1rem;
+    animation: 10s fadeIn;
+
 }
 
 .navbar-item, .navbar-link {
@@ -96,6 +98,7 @@ a.navbar-item:hover {
 }
 
 /* Animation */
+
 .ml2 .letter {
     display: inline-block;
     line-height: 1em;
@@ -118,8 +121,7 @@ a.navbar-item:hover {
     font-size: 5rem;
 }
 
-.sub-title,
-.home-content {
+.sub-title, .home-content {
     margin: 20px 0px;
     max-width: 500px;
     font-family: 'Raleway', sans-serif;
@@ -130,6 +132,18 @@ a.navbar-item:hover {
     background-color: #0000009f;
     color: #ffffff;
     border: 3px solid #a5dc0f;
+    animation: 10s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .button:hover {
