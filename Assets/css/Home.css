@@ -132,7 +132,7 @@ a.navbar-item:hover {
     background-color: #0000009f;
     color: #ffffff;
     border: 3px solid #a5dc0f;
-    animation: 10s fadeIn;
+    animation: 15s fadeIn;
     animation-fill-mode: forwards;
     visibility: hidden;
 }
